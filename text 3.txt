@@ -1,0 +1,14 @@
+document.getElementById("checkBtn").addEventListener("click", function () {
+
+    const email = document.getElementById("email").value;
+    const result = document.getElementById("result");
+
+    if (!email) {
+        result.textContent = "Please enter an email address.";
+        return;
+    }
+
+    result.textContent = "Email entered: " + email;
+
+    // Future API call can be added here
+});
